@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="C:\Users\kovko\source\repos\QR-decomposition\QR_header.h"
+           line_no="223"
+           routine="QR&lt;double&gt;::W_count"
+           is_vectorized="0"
+           self_time="2.915842E+01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="22"
+           priority="0">
+           <recommendation id="rec_fma_enforce_vec_c" title="Force vectorization if possible" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename="C:\Users\kovko\source\repos\QR-decomposition\QR_header.h"
+           line_no="247"
+           routine="QR&lt;double&gt;::R_recount"
+           is_vectorized="2"
+           self_time="6.716621E+00"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="32"
+           priority="0">
+           <recommendation id="rec_fma_enforce_vec_c" title="Force vectorization if possible" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename="C:\Users\kovko\source\repos\QR-decomposition\QR_header.h"
+           line_no="245"
+           routine="QR&lt;double&gt;::R_recount"
+           is_vectorized="0"
+           self_time="3.097972E+00"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="44"
+           priority="0">
+           <recommendation id="rec_fma_enforce_vec_c" title="Force vectorization if possible" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename="C:\Users\kovko\source\repos\QR-decomposition\QR_header.h"
+           line_no="223"
+           routine="QR&lt;double&gt;::W_count"
+           is_vectorized="0"
+           self_time="2.954433E+00"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="175"
+           priority="0">
+           <recommendation id="rec_fma_enforce_vec_c" title="Force vectorization if possible" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename="C:\Users\kovko\source\repos\QR-decomposition\QR_header.h"
+           line_no="300"
+           routine="QR&lt;double&gt;::HHolder_Q"
+           is_vectorized="0"
+           self_time="1.855446E+00"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="58"
+           priority="0">
+           <recommendation id="rec_fma_enforce_vec_c" title="Force vectorization if possible" confidence="1" gain="-1"/>
+  </hotspot>
+</IntelParallelAdvisorSummary >

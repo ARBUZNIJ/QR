@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <rdmgr>
+  <timestamp type="u64_t">1710879726</timestamp>
+  <hostname>WIN-V9OTMTOJA68</hostname>
+  <os>windows</os>
+  <product>Intel® Advisor 2023.2</product>
+  <buildNumber type="s32_t">614264</buildNumber>
+  <logicalCPUCount type="s32_t">24</logicalCPUCount>
+  <physicalCoreCount type="s32_t">12</physicalCoreCount>
+  <processorPackageCount type="s32_t">1</processorPackageCount>
+  <CPUFrequency type="s64_t">2195000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">79</CPUModel>
+  <CPUStepping type="s32_t">1</CPUStepping>
+  <CPUBrandName>Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz</CPUBrandName>
+  <isa>avx2</isa>
+  <collectionTimeBegin type="u64_t">1710879728</collectionTimeBegin>
+  <collectionTimeEnd type="u64_t">1710879764</collectionTimeEnd>
+  <finalizationTimeBegin type="u64_t">1710879766</finalizationTimeBegin>
+  <finalizationTimeEnd type="u64_t">1710879774</finalizationTimeEnd>
+ </rdmgr>
+</root>
