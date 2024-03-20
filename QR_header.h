@@ -57,12 +57,12 @@ public:
 			for (i = 0; i < n; i++)
 				copy(R + i * n, R + (i + 1) * n, REF_A + i * n);
 
-			/*auto start{ chrono::steady_clock::now() };
+			auto start{ chrono::steady_clock::now() };
 			LAPACKE_dgeqrf(LAPACK_ROW_MAJOR, n, n, REF_A, n, v_vector);
 			LAPACKE_dorgqr(LAPACK_ROW_MAJOR, n, n, n, REF_A, n, v_vector);
 			auto end{ chrono::steady_clock::now() };
 			chrono::duration<double> elapsed_seconds = end - start;
-			cout << "Time spent (MKL): " << elapsed_seconds.count() << endl;*/
+			cout << "Time spent (MKL): " << elapsed_seconds.count() << endl;
 
 			for (i = 0; i < n; i++)
 				copy(R + i * n, R + (i + 1) * n, REF_A + i * n);
@@ -148,7 +148,7 @@ public:
 			num_in_block = j - i_start;
 			count_v_gamma(j);
 
-			if (n - i_start >= 512)
+			if (n - i_start >= 256)
 			{
 #pragma  omp parallel for private (k) //512/64 slowdown, 1024/64 minor boost (simd in scal - slowdown)
 				for (k = j; k < i_start + block_size; k++)
@@ -158,7 +158,7 @@ public:
 				for (k = j; k < i_start + block_size; k++)
 					factor_block[k - j] = scal(j, k) / abs(v_vector[j]);
 
-			if (n - i_start >= 512)
+			if (n - i_start >= 256)
 			{
 #pragma omp parallel for simd private (i) //512/64 slowdown, 1024/64 minor boost
 				for (i = j; i < n; i++)
@@ -188,6 +188,7 @@ public:
 		memset(factor_block, 0, n * sizeof(T));
 
 		for (i = i_start; i < i_start + block_size; i++)
+//#pragma omp parallel for simd private(j)
 			for (j = i; j < n; j++)
 
 				factor_block[i] += R[(j + 1) * n + i] * R[(j + 1) * n + i];
@@ -216,13 +217,12 @@ public:
 //			for (j = 0; j < n; j++)
 //				for (k = i + i_start; k < n; k++)
 //					w[j * block_size + i] += Q[j * n + k] * R[(k + 1) * n + i + i_start] * factor_block[i + i_start];
-
 #pragma omp parallel for /*simd*/ private(j,k,m) //512/64 MULTIPLE boost WHY IS IT CORRECT AND FAST WITHOUT SIMD
-			for (j = 0; j < n; j++)
-				for (k = i + i_start; k < n; k++)
-					for (m = 0; m < i; m++)
+				for (j = 0; j < n; j++)
+					for (k = i + i_start; k < n; k++)
+						for (m = 0; m < i; m++)
 
-						w[j * block_size + i] += w[j * block_size + m] * R[(k + 1) * n + m + i_start] * R[(k + 1) * n + i + i_start] * factor_block[i + i_start];
+							w[j * block_size + i] += w[j * block_size + m] * R[(k + 1) * n + m + i_start] * R[(k + 1) * n + i + i_start] * factor_block[i + i_start];
 
 			for (j = i + i_start; j < n; j++)
 				w[j * block_size + i] += R[(j + 1) * n + i + i_start] * factor_block[i + i_start];
@@ -239,24 +239,45 @@ public:
 		for (i = i_start; i < n; i++)
 			memset(R + i * n + i_start + block_size, 0, (n - i_start - block_size) * sizeof(T));
 
+		if (n - i_start >= 64)
+		{
 #pragma omp parallel for simd private(k,j) //512/64 obvious boost WHY IS IT CORRECT
-		for (k = i_start + block_size; k < n; k++)
-			for (j = i_start; j < n; j++)
-				for (m = 0; m < n; m++)
+			for (k = i_start + block_size; k < n; k++)
+				for (j = i_start; j < n; j++)
+					for (m = 0; m < n; m++)
 
-					R[j * n + k] += Q[j * n + m] * R_tmp[m * n + k];
+						R[j * n + k] += Q[j * n + m] * R_tmp[m * n + k];
+		}
+		else {
+			for (k = i_start + block_size; k < n; k++)
+				for (j = i_start; j < n; j++)
+					for (m = 0; m < n; m++)
+
+						R[j * n + k] += Q[j * n + m] * R_tmp[m * n + k];
+		}
 	}
 
 	void Q_count(size_t i_start)
 	{
 		memset(Q, 0, n * n * sizeof(T));
 
+		if (n - i_start >= 64)
+		{
 #pragma omp parallel for simd private(k,j,m) //512/64 slowdown
-		for (j = i_start; j < n; j++)
-			for (k = i_start; k < n; k++)
-				for (m = i_start; m < i_start + min((j + 1 - i_start), block_size); m++)
+			for (j = i_start; j < n; j++)
+				for (k = i_start; k < n; k++)
+					for (m = i_start; m < i_start + min((j + 1 - i_start), block_size); m++)
 
-					Q[j * n + k] += R[(j + 1) * n + m] * w[k * block_size + (m - i_start)];
+						Q[j * n + k] += R[(j + 1) * n + m] * w[k * block_size + (m - i_start)];
+		}
+		else
+		{
+			for (j = i_start; j < n; j++)
+				for (k = i_start; k < n; k++)
+					for (m = i_start; m < i_start + min((j + 1 - i_start), block_size); m++)
+
+						Q[j * n + k] += R[(j + 1) * n + m] * w[k * block_size + (m - i_start)];
+		}
 
 		for (j = 0; j < n; j++)
 			Q[j * n + j] += 1;
