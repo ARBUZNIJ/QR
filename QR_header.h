@@ -8,12 +8,12 @@
 
 //const size_t bs = 32;
 using namespace std;
-template <typename T>
+typedef double T;
 class QR
 {
 private:
 
-	size_t i, j, k, n, m, block_size;
+	size_t i, j, k, n, m, block_size, i_start;
 	T* Q, * R, * REF_A, * u, * factor_block, * w, * z, * R_tmp, * v_vector;
 	T norm, eps = 1e-10;
 
@@ -71,14 +71,27 @@ public:
 
 	}
 
-	double* returnR()
-	{
-		return R;
-	}
+	void mult_Q_by_R(size_t i_start);
 
-	double* returnV()
+	//indexing for mult_Q_by_R
+
+inline 	T& q(size_t i, size_t j)
 	{
-		return v;
+		//Q full size is n*n
+		//starting from (0;0)
+		return Q[i * n + j];
+	}
+inline T& r_tmp(size_t i, size_t j)
+	{
+		//R_tmp full size is n*n
+		//starting from [i_start][i_start+block_size]
+		return R_tmp[(i + i_start) * n + j + i_start + block_size];
+	}
+inline T& r(size_t i, size_t j)
+	{
+		//R full size is n*n
+		//starting from [i_start][i_start+block_size]
+		return R[(i + i_start) * n + j + i_start + block_size];
 	}
 
 	void count_v_gamma(size_t column)
@@ -139,8 +152,9 @@ public:
 		if (n % block_size != 0)
 			HHolder_Block_finish(m * block_size, n - m * block_size);
 	}
-	void HHolder_Block(size_t i_start)
+	void HHolder_Block(size_t i_st)
 	{
+		i_start = i_st;
 		size_t num_in_block;
 
 		for (j = i_start; j < i_start + block_size; j++)
@@ -239,44 +253,47 @@ public:
 		for (i = i_start; i < n; i++)
 			memset(R + i * n + i_start + block_size, 0, (n - i_start - block_size) * sizeof(T));
 
-		if (n - i_start >= 64)
-		{
-#pragma omp parallel for simd private(k,j) //512/64 obvious boost WHY IS IT CORRECT
-			for (k = i_start + block_size; k < n; k++)
-				for (j = i_start; j < n; j++)
-					for (m = 0; m < n; m++)
-
-						R[j * n + k] += Q[j * n + m] * R_tmp[m * n + k];
-		}
-		else {
-			for (k = i_start + block_size; k < n; k++)
-				for (j = i_start; j < n; j++)
-					for (m = 0; m < n; m++)
-
-						R[j * n + k] += Q[j * n + m] * R_tmp[m * n + k];
-		}
+//		if (n - i_start >= 64)
+//		{
+//#pragma omp parallel for simd //512/64 obvious boost WHY IS IT CORRECT
+//			for (size_t k = i_start + block_size; k < n; k++)
+//				for (size_t j = i_start; j < n; j++)
+//					for (size_t m = i_start; m < n; m++)
+//
+//						R[j * n + k] += Q[(j - i_start) * n + m - i_start] * R_tmp[m * n + k];
+//		}
+//		else {
+//			for (size_t k = i_start + block_size; k < n; k++)
+//				for (size_t j = i_start; j < n; j++)
+//					for (size_t m = i_start; m < n; m++)
+//
+//						R[j * n + k] += Q[(j - i_start) * n + m - i_start] * R_tmp[m * n + k];;
+//		}
+		mult_Q_by_R(i_start);
 	}
 
 	void Q_count(size_t i_start)
 	{
 		memset(Q, 0, n * n * sizeof(T));
 
+
+
 		if (n - i_start >= 64)
 		{
-#pragma omp parallel for simd private(k,j,m) //512/64 slowdown
-			for (j = i_start; j < n; j++)
-				for (k = i_start; k < n; k++)
-					for (m = i_start; m < i_start + min((j + 1 - i_start), block_size); m++)
+#pragma omp parallel for simd //512/64 slowdown
+			for (size_t j = i_start; j < n; j++)
+				for (size_t k = i_start; k < n; k++)
+					for (size_t m = i_start; m < i_start + min((j + 1 - i_start), block_size); m++)
 
-						Q[j * n + k] += R[(j + 1) * n + m] * w[k * block_size + (m - i_start)];
+						Q[(j - i_start) * n + k - i_start] += R[(j + 1) * n + m] * w[k * block_size + (m - i_start)];
 		}
 		else
 		{
-			for (j = i_start; j < n; j++)
-				for (k = i_start; k < n; k++)
-					for (m = i_start; m < i_start + min((j + 1 - i_start), block_size); m++)
+			for (size_t j = i_start; j < n; j++)
+				for (size_t k = i_start; k < n; k++)
+					for (size_t m = i_start; m < i_start + min((j + 1 - i_start), block_size); m++)
 
-						Q[j * n + k] += R[(j + 1) * n + m] * w[k * block_size + (m - i_start)];
+						Q[(j - i_start) * n + k - i_start] += R[(j + 1) * n + m] * w[k * block_size + (m - i_start)];
 		}
 
 		for (j = 0; j < n; j++)

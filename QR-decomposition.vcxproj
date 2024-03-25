@@ -53,7 +53,6 @@
     <PlatformToolset>Intel C++ Compiler 2023</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <OpenMPOffloading>true</OpenMPOffloading>
     <UseInteloneMKL>Parallel</UseInteloneMKL>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -125,9 +124,9 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <OpenMP>GenerateParallelCode</OpenMP>
-      <UseProcessorExtensions>BROADWELL</UseProcessorExtensions>
-      <OpenMPOffloading>GenerateSPIR64CPU</OpenMPOffloading>
-      <PrecompiledHeader>Create</PrecompiledHeader>
+      <UseProcessorExtensions>AVX2</UseProcessorExtensions>
+      <OpenMPOffloading>None</OpenMPOffloading>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,6 +136,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Fast_matrix.cpp" />
     <ClCompile Include="QR_main.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>

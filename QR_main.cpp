@@ -9,7 +9,7 @@ int main()
 	//cin >> n;
 	//while (1)
 	//{
-	n = 1024;
+	n = 2096;
 		cout << "Enter block size: ";
 		block_size = 64;
 		//cin >> block_size;
@@ -17,7 +17,7 @@ int main()
 		/*while (count < 5)
 		{*/
 
-			QR <double> t(0, n, block_size);
+			QR t(0, n, block_size);
 			auto start_A{ chrono::steady_clock::now() };
 
 			t.HHolder_R();
@@ -39,12 +39,12 @@ int main()
 			cout << elapsed_seconds_A.count() << endl;
 			count++;
 
-			/*if (t.check())
+			if (t.check())
 
 				cout << "QR-decomposition is correct";
 			else cout << "QR-decomposition is incorrect";
 
-			cout << endl;*/
-		////}
+			cout << endl;
+			////}
 	//}
 }
