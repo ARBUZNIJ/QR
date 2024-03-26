@@ -3,17 +3,17 @@
 
 int main()
 {
-	int count;
+	//int count;
 	size_t n, block_size;
-	cout << "Enter matrix dimentions: " << endl;
+	//cout << "Enter matrix dimentions: " << endl;
 	//cin >> n;
 	//while (1)
 	//{
-	n = 2096;
+	n = 1024;
 		cout << "Enter block size: ";
-		block_size = 64;
-		//cin >> block_size;
-		count = 0;
+		//block_size = 64;
+		cin >> block_size;
+		//count = 0;
 		/*while (count < 5)
 		{*/
 
@@ -37,7 +37,7 @@ int main()
 			cout << "Time spent: " << elapsed_seconds_A.count() << " sec + " << elapsed_seconds_Q.count() << " sec = ";
 			elapsed_seconds_A += elapsed_seconds_Q;
 			cout << elapsed_seconds_A.count() << endl;
-			count++;
+			//count++;
 
 			if (t.check())
 
