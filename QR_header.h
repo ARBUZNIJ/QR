@@ -260,7 +260,9 @@ public:
 			
 						#pragma omp parallel for
 						for (size_t j = 0; j < n; j++)
+#pragma omp simd
 							for (size_t k = i + i_start; k < n; k++)
+
 								w[j * block_size + i] += Q[j * n + k] * R[(k + 1) * n + i + i_start] * factor_block[i + i_start];
 
 			//#pragma omp parallel for /*simd*/ private(j,k,m) //512/64 MULTIPLE boost WHY IS IT CORRECT AND FAST WITHOUT SIMD

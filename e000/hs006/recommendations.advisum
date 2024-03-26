@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="C:\Users\kovko\source\repos\QR\QR_header.h"
+           line_no="261"
+           routine="QR::W_count"
+           is_vectorized="1"
+           self_time="7.091313E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="17"
+           priority="0">
+           <recommendation id="rec_fma_target_avx2_isa_c" title="Target the AVX2 ISA" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename="C:\Users\kovko\source\repos\QR\QR_header.h"
+           line_no="318"
+           routine="QR::Q_count"
+           is_vectorized="2"
+           self_time="5.809185E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="118"
+           priority="0">
+           <recommendation id="rec_align_loop_c" title="Force the compiler to align loop code" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename="C:\Users\kovko\source\repos\QR\QR_header.h"
+           line_no="207"
+           routine="QR::HHolder_Block"
+           is_vectorized="2"
+           self_time="1.453058E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="92"
+           priority="0">
+           <recommendation id="rec_fma_enforce_vec_c" title="Force vectorization if possible" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename="C:\Users\kovko\source\repos\QR\QR_header.h"
+           line_no="51"
+           routine="QR::QR"
+           is_vectorized="0"
+           self_time="5.465957E-03"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="105"
+           priority="0">
+           <recommendation id="rec_type_conversions_smallest_c" title="Use the smallest data type" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename="C:\Users\kovko\source\repos\QR\QR_header.h"
+           line_no="51"
+           routine="QR::QR"
+           is_vectorized="0"
+           self_time="5.465957E-03"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="105"
+           priority="0">
+           <recommendation id="rec_system_functions_move_c" title="Remove system function call(s) inside loop" confidence="1" gain="-1"/>
+  </hotspot>
+</IntelParallelAdvisorSummary >

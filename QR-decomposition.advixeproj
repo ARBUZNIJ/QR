@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
- <cli_project type="bool">true</cli_project>
  <connectionOption>localhost</connectionOption>
+ <cli_project type="bool">true</cli_project>
  <rdmgr>
   <timestamp type="u64_t">1710878774</timestamp>
   <hostname>WIN-V9OTMTOJA68</hostname>
@@ -152,6 +152,171 @@
      <recursive type="bool">false</recursive>
      <priority type="bool">false</priority>
     </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\env\\..\\redist\\intel64\\vc14</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\redist\\intel64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\bin\\intel64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\ippcp\\latest\\redist\\intel64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\ipp\\latest\\redist\\intel64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\dpcpp-ct\\latest\\env\\..\\bin</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\dnnl\\latest\\env\\..\\cpu_dpcpp_gpu_dpcpp\\bin</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\dev-utilities\\latest\\bin</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\debugger\\latest\\env\\\\..\\gdb\\intel64\\bin</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\dal\\latest\\redist\\intel64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin\\intel64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\host\\windows64\\bin</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\bin</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools\\x64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\advisor\\latest\\bin64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\ocloc</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\inspector\\2024.0\\bin64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest\\bin64</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Users\\kovko\\source\\repos\\QR</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
    </searchCategory>
    <searchCategory>
     <category type="u8_t">2</category>
@@ -162,6 +327,16 @@
     </searchDirectory>
     <searchDirectory>
      <name>C:\\Users\\kovko\\source\\repos\\QR-decomposition</name>
+     <recursive type="bool">true</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Users\\kovko\\source\\repos\\QR</name>
      <recursive type="bool">true</recursive>
      <priority type="bool">false</priority>
     </searchDirectory>
@@ -258,6 +433,11 @@
      <recursive type="bool">false</recursive>
      <priority type="bool">false</priority>
     </searchDirectory>
+    <searchDirectory>
+     <name>C:\\Users\\kovko\\source\\repos\\QR</name>
+     <recursive type="bool">true</recursive>
+     <priority type="bool">false</priority>
+    </searchDirectory>
    </searchCategory>
    <searchCategory>
     <category type="u8_t">4</category>
@@ -269,15 +449,13 @@
      <debug type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
       <workload>
        <targetName>debug</targetName>
-       <result_directory.path>C:\Users\kovko\source\repos\QR-decomposition\r@@@{at}</result_directory.path>
+       <result_directory.path>C:\Users\kovko\source\repos\QR\r@@@{at}</result_directory.path>
        <use_app_dir_as_work_dir type="bool">true</use_app_dir_as_work_dir>
-       <launch_app.app_to_launch>C:\\Users\\kovko\\source\\repos\\QR-decomposition\\x64\\Release\\QR_decomposition.exe</launch_app.app_to_launch>
+       <launch_app.app_to_launch>C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release\\QR_decomposition.exe</launch_app.app_to_launch>
        <launch_app.app_parameters></launch_app.app_parameters>
-       <launch_app.working_folder>C:\\Users\\kovko\\source\\repos\\QR-decomposition\</launch_app.working_folder>
-       <launch_app.environment>TBB_DLL_PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc_mt&#13;
-PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\2023.2.0\\redist\\intel64;%PATH%&#13;
+       <launch_app.working_folder>C:\\Users\\kovko\\source\\repos\\QR\</launch_app.working_folder>
+       <launch_app.environment>PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\2023.2.0\\redist\\intel64;%PATH%&#13;
 &#13;
-    &#13;
     </launch_app.environment>
        <search_directories>
         <item>
@@ -285,6 +463,12 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
         </item>
         <item>
          <value>sym:r=C:\\Users\\kovko\\source\\repos\\QR-decomposition</value>
+        </item>
+        <item>
+         <value>sym=C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release</value>
+        </item>
+        <item>
+         <value>sym:r=C:\\Users\\kovko\\source\\repos\\QR</value>
         </item>
         <item>
          <value>bin=C:\\Users\\kovko\\source\\repos\\QR-decomposition\\x64\\Release</value>
@@ -363,6 +547,105 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
         </item>
         <item>
          <value>bin=C:\\Users\\kovko\\source\\repos\\QR-decomposition</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\env\\..\\redist\\intel64\\vc14</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ippcp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ipp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dpcpp-ct\\latest\\env\\..\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dnnl\\latest\\env\\..\\cpu_dpcpp_gpu_dpcpp\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dev-utilities\\latest\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\debugger\\latest\\env\\\\..\\gdb\\intel64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dal\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\host\\windows64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\advisor\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\ocloc</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\inspector\\2024.0\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\kovko\\source\\repos\\QR</value>
         </item>
        </search_directories>
        <context>
@@ -432,15 +715,13 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
      <map type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
       <workload>
        <targetName>map</targetName>
-       <result_directory.path>C:\Users\kovko\source\repos\QR-decomposition\r@@@{at}</result_directory.path>
+       <result_directory.path>C:\Users\kovko\source\repos\QR\r@@@{at}</result_directory.path>
        <use_app_dir_as_work_dir type="bool">true</use_app_dir_as_work_dir>
-       <launch_app.app_to_launch>C:\\Users\\kovko\\source\\repos\\QR-decomposition\\x64\\Release\\QR_decomposition.exe</launch_app.app_to_launch>
+       <launch_app.app_to_launch>C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release\\QR_decomposition.exe</launch_app.app_to_launch>
        <launch_app.app_parameters></launch_app.app_parameters>
-       <launch_app.working_folder>C:\\Users\\kovko\\source\\repos\\QR-decomposition\</launch_app.working_folder>
-       <launch_app.environment>TBB_DLL_PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc_mt&#13;
-PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\2023.2.0\\redist\\intel64;%PATH%&#13;
+       <launch_app.working_folder>C:\\Users\\kovko\\source\\repos\\QR\</launch_app.working_folder>
+       <launch_app.environment>PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\2023.2.0\\redist\\intel64;%PATH%&#13;
 &#13;
-    &#13;
     </launch_app.environment>
        <search_directories>
         <item>
@@ -448,6 +729,12 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
         </item>
         <item>
          <value>sym:r=C:\\Users\\kovko\\source\\repos\\QR-decomposition</value>
+        </item>
+        <item>
+         <value>sym=C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release</value>
+        </item>
+        <item>
+         <value>sym:r=C:\\Users\\kovko\\source\\repos\\QR</value>
         </item>
         <item>
          <value>bin=C:\\Users\\kovko\\source\\repos\\QR-decomposition\\x64\\Release</value>
@@ -526,6 +813,105 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
         </item>
         <item>
          <value>bin=C:\\Users\\kovko\\source\\repos\\QR-decomposition</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\env\\..\\redist\\intel64\\vc14</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ippcp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ipp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dpcpp-ct\\latest\\env\\..\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dnnl\\latest\\env\\..\\cpu_dpcpp_gpu_dpcpp\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dev-utilities\\latest\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\debugger\\latest\\env\\\\..\\gdb\\intel64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dal\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\host\\windows64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\advisor\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\ocloc</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\inspector\\2024.0\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\kovko\\source\\repos\\QR</value>
         </item>
        </search_directories>
        <context>
@@ -599,13 +985,11 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
      <release type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
       <workload>
        <targetName>release</targetName>
-       <launch_app.working_folder>C:\\Users\\kovko\\source\\repos\\QR-decomposition\</launch_app.working_folder>
-       <launch_app.environment>TBB_DLL_PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc_mt&#13;
-PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\2023.2.0\\redist\\intel64;%PATH%&#13;
+       <launch_app.working_folder>C:\\Users\\kovko\\source\\repos\\QR\</launch_app.working_folder>
+       <launch_app.environment>PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\2023.2.0\\redist\\intel64;%PATH%&#13;
 &#13;
-    &#13;
     </launch_app.environment>
-       <launch_app.app_to_launch>C:\\Users\\kovko\\source\\repos\\QR-decomposition\\x64\\Release\\QR_decomposition.exe</launch_app.app_to_launch>
+       <launch_app.app_to_launch>C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release\\QR_decomposition.exe</launch_app.app_to_launch>
        <launch_app.app_parameters></launch_app.app_parameters>
        <search_directories>
         <item>
@@ -613,6 +997,12 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
         </item>
         <item>
          <value>sym:r=C:\\Users\\kovko\\source\\repos\\QR-decomposition</value>
+        </item>
+        <item>
+         <value>sym=C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release</value>
+        </item>
+        <item>
+         <value>sym:r=C:\\Users\\kovko\\source\\repos\\QR</value>
         </item>
         <item>
          <value>bin=C:\\Users\\kovko\\source\\repos\\QR-decomposition\\x64\\Release</value>
@@ -691,6 +1081,105 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
         </item>
         <item>
          <value>bin=C:\\Users\\kovko\\source\\repos\\QR-decomposition</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\env\\..\\redist\\intel64\\vc14</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ippcp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ipp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dpcpp-ct\\latest\\env\\..\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dnnl\\latest\\env\\..\\cpu_dpcpp_gpu_dpcpp\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dev-utilities\\latest\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\debugger\\latest\\env\\\\..\\gdb\\intel64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dal\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\host\\windows64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\advisor\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\ocloc</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\inspector\\2024.0\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\kovko\\source\\repos\\QR</value>
         </item>
        </search_directories>
        <context>
@@ -800,15 +1289,13 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
      <tripcounts type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
       <workload>
        <targetName>tripcounts</targetName>
-       <result_directory.path>C:\Users\kovko\source\repos\QR-decomposition\r@@@{at}</result_directory.path>
+       <result_directory.path>C:\Users\kovko\source\repos\QR\r@@@{at}</result_directory.path>
        <use_app_dir_as_work_dir type="bool">true</use_app_dir_as_work_dir>
-       <launch_app.app_to_launch>C:\\Users\\kovko\\source\\repos\\QR-decomposition\\x64\\Release\\QR_decomposition.exe</launch_app.app_to_launch>
+       <launch_app.app_to_launch>C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release\\QR_decomposition.exe</launch_app.app_to_launch>
        <launch_app.app_parameters></launch_app.app_parameters>
-       <launch_app.working_folder>C:\\Users\\kovko\\source\\repos\\QR-decomposition\</launch_app.working_folder>
-       <launch_app.environment>TBB_DLL_PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\..\\..\\..\\tbb\\latest\\redist\\intel64\\vc_mt&#13;
-PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\bin;C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\2023.2.0\\redist\\intel64;%PATH%&#13;
+       <launch_app.working_folder>C:\\Users\\kovko\\source\\repos\\QR\</launch_app.working_folder>
+       <launch_app.environment>PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\2023.2.0\\redist\\intel64;%PATH%&#13;
 &#13;
-    &#13;
     </launch_app.environment>
        <search_directories>
         <item>
@@ -816,6 +1303,12 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
         </item>
         <item>
          <value>sym:r=C:\\Users\\kovko\\source\\repos\\QR-decomposition</value>
+        </item>
+        <item>
+         <value>sym=C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release</value>
+        </item>
+        <item>
+         <value>sym:r=C:\\Users\\kovko\\source\\repos\\QR</value>
         </item>
         <item>
          <value>bin=C:\\Users\\kovko\\source\\repos\\QR-decomposition\\x64\\Release</value>
@@ -894,6 +1387,105 @@ PATH=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2023.2.0\\windows\\redist
         </item>
         <item>
          <value>bin=C:\\Users\\kovko\\source\\repos\\QR-decomposition</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\kovko\\source\\repos\\QR\\x64\\Release</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\tbb\\latest\\env\\..\\redist\\intel64\\vc14</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ippcp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\ipp\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dpcpp-ct\\latest\\env\\..\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dnnl\\latest\\env\\..\\cpu_dpcpp_gpu_dpcpp\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dev-utilities\\latest\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\debugger\\latest\\env\\\\..\\gdb\\intel64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\dal\\latest\\redist\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\bin\\intel64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\host\\windows64\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\oclfpga\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\Performance Tools</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\advisor\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\windows\\lib\\ocloc</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\inspector\\2024.0\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Program Files (x86)\\Intel\\oneAPI\\vtune\\latest\\bin64</value>
+        </item>
+        <item>
+         <value>bin=C:\\Users\\kovko\\source\\repos\\QR</value>
         </item>
        </search_directories>
        <context>
